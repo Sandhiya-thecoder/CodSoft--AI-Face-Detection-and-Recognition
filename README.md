@@ -76,10 +76,10 @@ This makes it a great choice for systems that require quick recognition without 
 
 ---
 
-## 🖥️ Installation & Setup
+## 🖥️ Installation & Setup:
+### import the following commands for installing libraries:
+- pip install numpy opencv-python (numpy & cv)
+- pip install opencv-contrib-python (face)
 
 ### 1️⃣ Clone the Repository
 ```bash
-
-git clone https://github.com/yourusername/Face-Detection-Recognition.git
-cd Face-Detection-Recognition
