@@ -8,7 +8,7 @@ Developed as my <b>final internship task</b>, this project demonstrates how comp
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" />
   <img src="https://img.shields.io/badge/OpenCV-4.x-green.svg" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  <img src="https://img.shields.io/badge/State-Advanced-yellow.svg" />
   <img src="https://img.shields.io/badge/Status-Completed-success.svg" />
 </p>
 
