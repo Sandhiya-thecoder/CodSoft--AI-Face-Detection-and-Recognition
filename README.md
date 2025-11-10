@@ -8,7 +8,7 @@ Developed as my <b>final internship task</b>, this project demonstrates how comp
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" />
   <img src="https://img.shields.io/badge/OpenCV-4.x-green.svg" />
-  <img src="https://img.shields.io/badge/State-Advanced-yellow.svg" />
+  <img src="https://img.shields.io/badge/Level-Advanced-yellow.svg" />
   <img src="https://img.shields.io/badge/Status-Completed-success.svg" />
 </p>
 
@@ -43,22 +43,20 @@ The entire process — from detection to recognition — happens in a fraction o
 
 ## ⚙️ Working Mechanism
 
-Here’s how the system works step by step:
+-The system activates your webcam and uses the **Haar Cascade Classifier** to detect faces in the live video feed.  
+Detected faces are highlighted with rectangular bounding boxes for better visibility.
 
-1️⃣ **Face Detection**  
-   The program activates your webcam and uses the **Haar Cascade Classifier** to detect faces in the live video feed. Detected faces are highlighted using rectangular bounding boxes.
+-When you press **‘t’**, the system captures multiple samples of your face and saves them as image datasets in a specific file.  
+These images serve as the training data for the recognition model.
 
-2️⃣ **Training Mode**  
-   When you press **‘t’**, the system begins capturing multiple samples of your face and stores them as image datasets. These serve as training data for the recognition model.
+-Next, the system trains a **Local Binary Patterns Histogram (LBPH)** model.  
+LBPH works by encoding local facial textures into binary patterns and computing histograms that represent the unique features of each face.
 
-3️⃣ **Model Training**  
-   Once enough samples are collected, the system trains a **Local Binary Patterns Histogram (LBPH)** model.  
-   LBPH works by encoding facial textures into binary patterns and computing histograms that represent unique facial features.
+-Once the training is complete, the webcam reopens for **recognition mode**.  
+By pressing **‘q’**, the system starts comparing the **live face** with the **trained model** (`trainer.yml`).  
+If a match is found, it displays **“Recognized”**; otherwise, it shows **“Different face.”**
 
-4️⃣ **Recognition Mode**  
-   After training, the webcam reopens for recognition.  
-   When you press **‘q’**, the system begins comparing the **current live face** with the **trained model** (`trainer.yml`).  
-   If a match is found, it displays **“Recognized”**; otherwise, it shows **“Different face.”**
+Finally, pressing **‘s’** will terminate the program safely and close all running windows.
 
 5️⃣ **Output Display**  
    Recognition results are displayed live on the screen, providing instant visual feedback.
